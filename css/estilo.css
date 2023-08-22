@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.titulo {
+  background-image: url(../imagenes/logo.gif);
+  margin: auto;
+}
+
+h1 {
+  font-size: 80px;
+  background-color: #6FFFE9;
+  font-family: "Splash", cursive;
+  text-align: center;
+  color: #00fff7;
+}
+
+h2 {
+  background-color: #6FFFE9;
+  font-family: "Rajdhani", sans-serif;
+  color: #00fff7;
+  text-align: center;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+}
+
+body {
+  background-color: #1C2541;
+  background-image: url(../imagenes/feaaf5292d46adefe1f8326b4b20ee2a.jpg);
+}
+
+.linkeo {
+  background-color: #5BC0BE;
+}
+
+.slider {
+  width: 700px;
+  height: 90%;
+}
+
+footer {
+  background-color: rgba(111, 255, 233, 0.7098039216);
+  padding: 50px;
+}
+
+h3 {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: #00716f;
+  font-family: "Rajdhani", sans-serif;
+  color: #00ff62;
+}
+
+.txt {
+  background-color: #00ccff;
+  display: flex;
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
+  height: 150px;
+  width: 350px;
+}
+
+.linkeo {
+  text-align: center;
+  width: 95%;
+  height: 70px;
+  margin: 0 auto;
+  background-color: #00b79b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Sirin Stencil", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(#00e9fe, #00494c);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul a {
+  color: #110487;
+  text-decoration: none;
+  padding: 0.7rem;
+}
+
+nav li a:hover {
+  background-color: rgb(0, 49, 113);
+  color: #00b79b;
+  border-radius: 20px;
+  color: #77ff00;
+}
+
+h5 {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.MiImagen {
+  width: 10rem;
+}
+
+.wiki {
+  text-align: center;
+}
+
+.videos {
+  padding: 3rem;
+  margin: 3rem;
+  background-image: linear-gradient(#00e9fe, #00494c);
+}
+
+.caja1 {
+  background-color: #003545;
+  border-radius: 25px;
+  font-family: salmon, sans-serif;
+  color: #00ff62;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.caja2 {
+  background-color: #003545;
+  border-radius: 25px;
+  font-family: salmon, sans-serif;
+  color: #00ff62;
+  padding: 0.5rem;
+  text-align: end;
+}
+
+.caja3 {
+  background-color: #003545;
+  border-radius: 25px;
+  font-family: salmon, sans-serif;
+  color: #00ff62;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.estadisticas {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.estadisticas {
+  animation: rotate-center 0.4s;
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.H3-2 {
+  font-size: 40px;
+  color: #00ff62;
+}
+
+.H3-3 {
+  font-size: 50PX;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  body {
+    background-color: #003c25;
+  }
+}
+.PNG {
+  background-color: #0092b7;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  animation: rotate-scale-up-vertical 0.4s linear both;
+}
+
+@keyframes rotate-scale-up-vertical {
+  0% {
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    transform: scale(2) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1) rotateY(360deg);
+  }
+}
+.contenedor {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta {
+  height: 250px;
+  width: 200px;
+  background-color: #001418;
+  border-radius: 5%;
+  box-shadow: 16px 14px 20px rgba(0, 20, 18, 0.5490196078);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: conic-gradient(rgb(51, 255, 0) 20deg, transparent 120deg);
+  animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tarjeta::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 190px;
+  background-color: #000000;
+  border-radius: 10%;
+  box-shadow: inset 16px 14px 20px rgba(0, 198, 20, 0.5490196078);
+}
+
+h4 {
+  color: rgb(26, 255, 0);
+  z-index: 2;
+  background-color: transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}
+
+.galeria33 {
+  background-color: #0092b7;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+
+.vengadores {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+.vengadores img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.vengadores img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*# sourceMappingURL=estilo.css.map */
